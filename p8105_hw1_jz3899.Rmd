@@ -26,7 +26,7 @@ ncol(early_january_weather)
 mean(early_january_weather$temp)
 ```
 
-This dataset shows the weather condition of EWR in January 2013. It collected data like the temperature, the humidity, the wind speed, the pressure and visibility every hour and every day in January 2013. There are 358 rows and 15 columns in this dataset. The mean of the temperature is 39.58 F.
+**This dataset shows the weather condition of EWR in January 2013. It collected data like the temperature, the humidity, the wind speed, the pressure and visibility every hour and every day in January 2013. There are 358 rows and 15 columns in this dataset. The mean of the temperature is 39.58 F.**
 
 Make a scatter plot of hour and temperature. Use humidity as a third dimension.
 
@@ -36,7 +36,7 @@ ggplot(early_january_weather, aes(x = hour, y = temp, color = humid)) +
 ggsave("hour_vs_temp.pdf", height = 4, width = 6)
 ```
 
-The temperature of the day will rise during daytime, often begins at 5 am. After 12 pm, the temperature begins to dip until the next day's early morning. And higher humidity seems to correspond to higher temperature.
+**The temperature of the day will rise during daytime, often begins at 5 am. After 12 pm, the temperature begins to dip until the next day's early morning. And higher humidity seems to correspond to higher temperature.**
 
 # Problem 2
 
@@ -61,7 +61,7 @@ mean(pull(hw1_df, var = vec_char))
 mean(pull(hw1_df, var = vec_factor))
 ```
 
-Sample of size 10 and the logical vector works well. Character vector and factor vector does not work.
+**Sample of size 10 and the logical vector works well. Character vector and factor vector does not work.**
 
 Convert all the variables to numeric
 
@@ -71,4 +71,4 @@ as.numeric(pull(hw1_df, var = vec_char))
 as.numeric(pull(hw1_df, var = vec_factor))
 ```
 
-Logical vector and factor vector can be converted to numeric. Character vector can not be converted to numeric. It is because characters can not be directly turned into numbers. This explains why we can get the mean of logical vector. Because R convert true and false to 1 and 0.
+**Logical vector and factor vector can be converted to numeric. Character vector can not be converted to numeric. It is because characters can not be directly turned into numbers. This explains why we can get the mean of logical vector. Because R convert true and false to 1 and 0.**
