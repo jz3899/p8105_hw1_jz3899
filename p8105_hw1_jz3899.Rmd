@@ -3,3 +3,14 @@ title: "p8105_hw1_jz3899"
 output: html_document
 ---
 
+```{r}
+library(moderndive)
+data("early_january_weather")
+```
+
+```{r}
+nrow(early_january_weather)
+ncol(early_january_weather)
+mean('temp')
+```
+
